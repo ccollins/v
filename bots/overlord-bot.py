@@ -1,6 +1,5 @@
 import logging
-from v import issue_order, finish_turn, parse_game_state
-from planet_wars import Universe
+from planet_wars import Universe, issue_order, finish_turn, parse_game_state
 
 """
 // The do_turn function is where your code goes. The universe object contains
@@ -52,7 +51,7 @@ def main():
     while(True):
         current_line = raw_input()
         if len(current_line) >= 2 and current_line.startswith("go"):
-            parse_game_state(universe, map_data)
+            universe = parse_game_state(universe, map_data)
             do_turn(universe)
             finish_turn()
             map_data = ''
@@ -67,6 +66,7 @@ if __name__ == '__main__':
     pass
     
   try:
+    logging.basicConfig(filename='logs/debug-war.log',level=logging.DEBUG)
     main()
   except KeyboardInterrupt:
     print 'Good-bye.  May the force be with you.'
