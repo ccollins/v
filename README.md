@@ -5,13 +5,13 @@ V - Python starter kit for the Google sponsored University of Waterloo Planet Wa
 Use
 ---
 To pit the DualBot and BullyBot against each other on the map1 map:
-	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 log.txt "java -jar examples/bots/DualBot.jar" "java -jar examples/bots/BullyBot.jar"
+	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 logs/war.log "java -jar examples/bots/DualBot.jar" "java -jar examples/bots/BullyBot.jar"
 	
 overlord-bot vs RageBot on map31:
-	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 log.txt "python bots/overlord-bot.py" "java -jar examples/bots/RageBot.jar"
+	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 logs/war.log "python bots/overlord-bot.py" "java -jar examples/bots/RageBot.jar"
 	
 view the same fight in the visualizer:
-	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 log.txt "python bots/overlord-bot.py" "java -jar examples/bots/RageBot.jar" | java -jar tools/ShowGame.jar
+	java -jar tools/PlayGame.jar examples/maps/map1.txt 500 500 logs/war.log "python bots/overlord-bot.py" "java -jar examples/bots/RageBot.jar" | java -jar tools/ShowGame.jar
 	
 MIT License
 -----------
