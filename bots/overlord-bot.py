@@ -1,3 +1,4 @@
+import logging
 from v import issue_order, finish_turn, parse_game_state
 from planet_wars import Universe
 
