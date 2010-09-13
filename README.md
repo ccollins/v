@@ -2,6 +2,7 @@ V - Python starter kit for the University of Waterloo Planet Wars AI Challenge
 ===============================================================================================
 [AI Contest Homepage](http://ai-contest.com)
 
+
 Use
 ---
 To pit the DualBot and BullyBot against each other on the map1 map:
